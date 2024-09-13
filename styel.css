@@ -1,0 +1,111 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:1.2rem;
+}
+h1{
+    text-align:center;
+    padding:10px;
+}
+/* Container Styling */
+.container {
+    width: 100%; 
+    max-width: 600px;
+    height:300px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* Box Styling */
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* InputContainer Styling */
+.InputContainer {
+    width: 100%; /* Make input container responsive */
+    max-width: 210px; /* Set a maximum width */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(227, 213, 255), rgb(255, 231, 231));
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+/* Button Styling */
+button {
+    width:120px; /* Fixed width for better visibility */
+    padding: 0.8rem 0.8rem;
+    border-radius: 50px;
+    background-color: gray;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+/* Input Styling */
+.input {
+    width: 100%; /* Make input field responsive */
+    max-width: 200px; /* Set a maximum width */
+    height: 40px;
+    border: none;
+    outline: none;
+    caret-color: rgb(255, 81, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(19, 19, 19);
+    font-size: 13.4px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Adjust container width for tablets and smaller devices */
+    }
+
+    .InputContainer {
+        max-width: 180px; /* Adjust for smaller screens */
+    }
+
+    .input {
+        max-width: 180px; /* Adjust input field width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%; /* Further adjust container width for small screens */
+        margin: 10px auto;
+    }
+
+    .InputContainer {
+        max-width: 160px; /* Adjust for very small screens */
+        height: 45px; /* Adjust height if necessary */
+    }
+
+    .input {
+        max-width: 160px; /* Adjust input field width for very small screens */
+        height: 35px; /* Adjust height if necessary */
+        font-size: 12px; /* Adjust font size for better readability */
+    }
+
+    button {
+        width: 100px; 
+        padding:10px 20px;
+    }
+}
