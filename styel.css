@@ -48,7 +48,7 @@ h1{
 
 /* Button Styling */
 button {
-    width:120px; /* Fixed width for better visibility */
+    width:150px; /* Fixed width for better visibility */
     padding: 0.8rem 0.8rem;
     border-radius: 50px;
     background-color: gray;
@@ -105,7 +105,7 @@ button {
     }
 
     button {
-        width: 100px; 
+        width:150px; 
         padding:10px 20px;
     }
 }
